@@ -9,9 +9,7 @@
     "experiments": {
       "tsconfigPaths": true
     },
-    "plugins": [
-      "expo-font"
-    ],
+    "plugins": ["expo-font", "react-native-ble-plx"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -20,17 +18,28 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.myexpoapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.myexpoapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "99f9eaff-cfaa-4519-9e9f-67e803593614"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/99f9eaff-cfaa-4519-9e9f-67e803593614"
     }
   }
 }

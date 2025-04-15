@@ -10,6 +10,7 @@ import {
 // import StartYourJourney from '../screens/StartYourJourney';
 import Home from '../screens/Home';
 import Scanning from '../screens/Scanning';
+import Devices from '../screens/Device';
 
 const Stack = createNativeStackNavigator();
 // Main Tab Navigator
@@ -40,6 +41,11 @@ export default function ScreenTabNavigator() {
         <Stack.Screen
           name="Scanning"
           component={Scanning}
+          options={{ headerShown: false, animation: 'slide_from_right' }}
+        />
+        <Stack.Screen
+          name="Devices"
+          component={Devices}
           options={{ headerShown: false, animation: 'slide_from_right' }}
         />
       </Stack.Navigator>

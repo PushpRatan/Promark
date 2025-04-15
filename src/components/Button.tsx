@@ -12,8 +12,8 @@ const Button: React.FC<ButtonProps> = ({ className, children, onPress }) => {
     <TouchableOpacity
       onPress={onPress}
       activeOpacity={0.8}
-      className={`bg-primary flex h-11 w-full items-center justify-center rounded-full ${className}`}>
-      <Text className="text-base font-medium">{children}</Text>
+      className={`flex h-11 w-full items-center justify-center rounded-full bg-primary ${className}`}>
+      <Text className="text-dark-font text-base font-medium">{children}</Text>
     </TouchableOpacity>
   );
 };
